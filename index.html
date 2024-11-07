@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SuperMart - Your One-Stop Supermarket</title>
+  <link rel="stylesheet" href="balu.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>SuperMart</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <button id="viewCartBtn">View Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Fresh Products. Delivered to You.</h2>
+      <p>Your local supermarket offering fresh produce, groceries, and more at great prices!</p>
+      <a href="#" class="cta-button">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-list">
+        <div class="product-card" data-id="1">
+          <img src="apple.jpg" alt="Fresh Apples">
+          <h3>Fresh Apples</h3>
+          <p>$2.99 / lb</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="2">
+          <img src="banana.jpg" alt="Whole Wheat Bread">
+          <h3>Whole Wheat Bread</h3>
+          <p>$1.99</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="3">
+          <img src="carrot.jpg" alt="Organic Milk">
+          <h3>Organic Milk</h3>
+          <p>$3.49</p>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-modal-content">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <div class="cart-total">
+        <p>Total: $<span id="totalPrice">0.00</span></p>
+      </div>
+      <button id="clearCartBtn">Clear Cart</button>
+      <button id="closeCartBtn">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 SuperMart. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </div>
+  </footer>
+
+  <script src="balu.js"></script>
+</body>
+</html>
